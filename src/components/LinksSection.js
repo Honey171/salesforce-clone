@@ -67,11 +67,6 @@ function LinksSection() {
           <span className="text-[#4593d1] hover:text-[#8B42A4] cursor-pointer">
             Security and Performance
           </span>
-          <img
-            src="https://thenounproject.com/api/private/icons/32687/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjuDAcRPuf4PDQhCtI4fvzSx2x1WUn5FfCAf-OkQtF1JQPTBaEi8OiQhwO5YQ9oj8Q9CIP6R55ZuYCrYNirNALkB-pQQ%3D%3D"
-            alt=""
-            className="w-5 h-5 text-gray-100 cursor-default"
-          />
         </div>
         <li>Legal</li>
         <li>Privacy for Salesforce Products</li>
