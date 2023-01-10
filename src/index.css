@@ -1,13 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.worldList li:not(:first-child) {
+  @apply underline text-[#385981] decoration-[#032D60] cursor-pointer hover:text-[#4299DE];
+}
+
+.worldList li:first-child {
+  @apply text-[#4B4B4B] pb-3 opacity-80;
+}
+
+.linkList li:not(:first-child) {
+  @apply text-[#4593d1] hover:text-[#8B42A4] cursor-pointer;
+}
+
+.footerLinks li {
+  @apply text-[#01a1e0] underline hover:text-white cursor-pointer;
+}
+
+.productList li {
+  @apply hover:text-[#014486] cursor-pointer;
+}
+
+.unscrollable {
+  overflow: hidden;
+  background-color: #c1c1c9;
+  transition: 1s;
+}
+
+.heroBg {
+  background-image: url(/src/assets/bgSmall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.contentBg {
+  background-image: url(/src/assets/contentBg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+@media (min-width: 1024px) {
+  .heroBg {
+    background-image: url(/src/assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .updateBg {
+    background-image: url(/src/assets/updateBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+  }
 }
